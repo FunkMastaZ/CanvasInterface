@@ -2,6 +2,7 @@ import datetime
 import re
 
 # Searches a list of assignments for a particular type
+# TODO list example types...
 def assignment_finder_by_type(target_type, list_of_assignments):
     list_of_matching_assignments = []
     # For each assignment in the list of course assignments...
@@ -13,6 +14,7 @@ def assignment_finder_by_type(target_type, list_of_assignments):
             list_of_matching_assignments.append(assignment)
     # Finally, return the list of matching assignments
     return list_of_matching_assignments
+
 
 # Searches a list of assignments for something that may be a Turnitin assignment
 def turnitin_assignment_finder(list_of_assignments):
@@ -64,3 +66,5 @@ def validate_canvas_course_id(course_id):
     else:
         # ...then return false
         return False
+
+
